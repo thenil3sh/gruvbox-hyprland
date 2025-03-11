@@ -1,0 +1,8 @@
+# Not Right now...
+.config/hypr/wallpapers
+
+
+# Just the vencord theme and nothing else
+.config/Vencord/dist
+.config/Vencord/settings
+
