@@ -1,15 +1,15 @@
 #!/bin/bash
-pgrep -x "wf-recorder" && pkill -INT -x wf-recorder && notify-send -h string:wf-recorder:record -t 1000 "Finished Recording" && exit 0
+pgrep -x "wf-recorder" && pkill -INT -x wf-recorder && notify-send --icon=replay-record-error -h string:wf-recorder:record -t 1000 "Finished Recording" && exit 0
 
-notify-send -h string:wf-recorder:record -t 1000 "Recording in:" "<span color='#90a4f4' font='26px'><i><b>3</b></i></span>"
-
-sleep 1
-
-notify-send -h string:wf-recorder:record -t 1000 "Recording in:" "<span color='#90a4f4' font='26px'><i><b>2</b></i></span>"
+notify-send --icon=replay-record -h string:wf-recorder:record -t 1000 "Recording in:" "<span color='#ebdbb2' font='26px'><b>3</b></span>"
 
 sleep 1
 
-notify-send -h string:wf-recorder:record -t 950 "Recording in:" "<span color='#90a4f4' font='26px'><i><b>1</b></i></span>"
+notify-send --icon=replay-record -h string:wf-recorder:record -t 1000 "Recording in:" "<span color='#ebdbb2' font='26px'><b>2</b></span>"
+
+sleep 1
+
+notify-send --icon=replay-record -h string:wf-recorder:record -t 950 "Recording in:" "<span color='#ebdbb2' font='26px'><b>1</b></span>"
 
 sleep 1
 

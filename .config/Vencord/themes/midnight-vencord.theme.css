@@ -14,13 +14,13 @@
 
 @import url('https://refact0r.github.io/midnight-discord/midnight.css');
 
-/* @import url('https://fonts.googleapis.com/css?family=Inter'); */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inter');
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap'); */
 /* customize things here */
 :root {
 	/* font, change to 'gg sans' for default discord font*/
 	/* --font: 'Inter'; */
-	--font: 'JetBrains Mono';
+	--font: 'Inter';
 
 	/* top left corner text */
 	--corner-text: 'Discord';

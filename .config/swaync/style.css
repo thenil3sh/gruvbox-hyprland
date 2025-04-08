@@ -8,9 +8,14 @@
 @define-color noti-bg-focus rgba(68, 68, 68, 0.6);
 @define-color noti-close-bg rgba(255, 255, 255, 0.1);
 @define-color noti-close-bg-hover rgba(255, 255, 255, 0.15);
-@define-color text-color rgb(255, 255, 255);
+@define-color text-color #ebdbb2;
 @define-color text-color-disabled rgb(150, 150, 150);
 @define-color bg-selected rgb(0, 128, 255);
+
+* {
+  font-family: 'JetBrainsMono Nerd Font';
+}
+
 .notification-row {
   outline: none;
 }
@@ -33,7 +38,7 @@
   margin-top: 5px;
   margin-right: 5px;
   box-shadow: none;
-  border: none;
+  border: 2px;
   min-width: 24px;
   min-height: 24px;
 }
