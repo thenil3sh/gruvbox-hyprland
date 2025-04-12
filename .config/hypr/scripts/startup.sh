@@ -13,6 +13,9 @@ swww init && swww img $HOME/.config/hypr/wallpapers/home-sweet-home.jpg --transi
 # effects
 $scripts/rgb &
 
+# polkit authentication agent 
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
 # other
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP &

@@ -1,0 +1,14 @@
+set font                    "JetBrainsMono Nerd Font 12"
+et selection-notification	"false"
+set selection-clipboard		"clipboard"
+set guioptions			    "sv"
+set scroll-page-aware		"true"
+set statusbar-home-tilde	"true"
+set recolor			        "true"
+set adjust-open			    "width"
+set statusbar-h-padding		5
+set statusbar-v-padding		5
+map x toggle_statusbar scrollbar
+map f toggle_fullscreen
+set double-click-follow     "false"
+include zathura-gruvbox-dark
