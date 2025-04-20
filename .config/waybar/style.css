@@ -1,10 +1,11 @@
 * {
-  border : none;
-  border-radius: 8;
+  border : 2px;
+  /* border : none; */
+  border-radius: 8px;
   font-family: "JetbrainsMono Nerd Font";
   /* color : #ebdbb2; */
   /* font-size: 15px; */
-  min-height: 10px;
+  min-height: 15px;
   /* background-color: #292828; */
 }
 
@@ -72,7 +73,7 @@ window#waybar.hidden {
   margin-left: 8px;
   padding-left: 10px;
   padding-top: 2px;
-  padding-right: 12px;
+  padding-right: 15px;
   margin-bottom: 0px;
   border-radius: 10px;
   transition: none;
@@ -101,14 +102,19 @@ window#waybar.hidden {
   padding-right: 10px;
   margin-bottom: 0px;
   border-radius: 10px;
+  border-width : 10px;
+  border : #a89884;
   transition: none;
-  color: #161320;
-  background: #b5e8e0;
+  /* color: #161320; */
+  background: #292828;
+  border-radius:10px;
 }
 
 #battery.critical:not(.charging) {
-  background-color: #b5e8e0;
-  color: #161320;
+  background-color: #292828;
+  color: #d65d0e;
+  border : #d65d0e;
+  color: #a89884;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -127,12 +133,13 @@ window#waybar.hidden {
   margin-top: 6px;
   margin-left: 8px;
   padding-left: 10px;
-  padding-right: 10px;
+  padding-right: 13px;
   margin-bottom: 0px;
   border-radius: 10px;
   transition: none;
-  color: #161320;
-  background: #f8bd96;
+  border : 2px #a89884;
+  color: #a89884;
+  background: #292828;
 }
 
 #clock {

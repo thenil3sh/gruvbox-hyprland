@@ -23,10 +23,10 @@
         // "cpu",
         // "memory",
         // "temperature",
-        //"backlight",
+        "backlight",
         //"keyboard-state",
         //"sway/language",
-        //"battery",
+        "battery",
         //"battery#bat2",
         "tray",
         "custom/power"
@@ -152,17 +152,17 @@
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
+            "󱃍",
+            "󰁻",
+            "󰁼",
+            "󰁾",
+            "󰁹"
         ]
     },
     "battery#bat2": {
