@@ -103,9 +103,9 @@ window#waybar.hidden {
   margin-bottom: 0px;
   border-radius: 10px;
   border-width : 10px;
-  border : #a89884;
+  border : 2px solid #a89884;
   transition: none;
-  /* color: #161320; */
+  color: #a89884;
   background: #292828;
   border-radius:10px;
 }
@@ -137,7 +137,7 @@ window#waybar.hidden {
   margin-bottom: 0px;
   border-radius: 10px;
   transition: none;
-  border : 2px #a89884;
+  border : 2px solid #a89884;
   color: #a89884;
   background: #292828;
 }

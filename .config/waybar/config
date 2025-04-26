@@ -153,7 +153,7 @@
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% ",
+        "format-plugged": "{capacity}% 󰚥",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
@@ -184,16 +184,26 @@
         // {essid} for wifi idk why
         // {ipaddr} for ip address
         // {signalStrength}
-        "format-wifi": "󰤨",
-        // {ipaddr}
+        "format-wifi": "{icon}",
+
+        "format-icons" : [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ],
+
+        "on-click" : "kitty nmtui",
+        
         "format-ethernet": "󰈀",
         "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-linked": "{ifname}",
         "format-disconnected": "󱎘",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-alt": "{ifname} : {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        
         "format": "{icon} {format_source}",
         "format-bluetooth": "󰋋 {format_source}",
         "format-bluetooth-on-hover":"{volume} 󰋋 {format_source}",
@@ -226,7 +236,7 @@
         },
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+        
     },
     "custom/power": {
         "format": "",

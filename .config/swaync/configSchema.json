@@ -11,7 +11,7 @@
     "positionX": {
       "type": "string",
       "description": "Horizontal position of control center and notification window",
-      "default": "right",
+      "default": "center",
       "enum": ["right", "left", "center"]
     },
     "layer": {
