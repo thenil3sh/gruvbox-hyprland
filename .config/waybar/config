@@ -12,14 +12,15 @@
     "modules-center": [
         // "hyprland/window"
         "clock",
-        "custom/media"
-        // "mpd"
+        // "custom/media",
+        // "mpd",
+        "custom/recording_status"
     ],
     "modules-right": [
         // "idle_inhibitor",
         "network",
         "pulseaudio",
-        "power-profiles-daemon",
+        // "power-profiles-daemon",
         // "cpu",
         // "memory",
         // "temperature",
@@ -106,7 +107,7 @@
     },
     "clock": {
         "timezone": "Asia/Calcutta",
-        "tooltip-format": "<big>{%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "tooltip-format": "\n{calendar}",
         "format":"{:%H %M}",
         "format-alt": "{:%d %m %y}"
     },
@@ -250,5 +251,9 @@
             "hibernate": "systemctl hibernate"
         }
         // "on-click":"hyprctl dispatch exit"
+    },
+    "custom/recording_status" : {
+        "signal" : 10,
+        "exec" : "$HOME/.config/waybar/record_state.sh"
     }
 }

@@ -1,5 +1,5 @@
 #!/bin/bash
-pgrep -x "wf-recorder" && pkill -INT -x wf-recorder && notify-send --icon=replay-record-error -h string:wf-recorder:record -t 1000 "Finished Recording" && exit 0
+pgrep -x "wf-recorder" && pkill -INT -x wf-recorder && notify-send --icon=replay-record-error -h string:wf-recorder:record -t 1000 "Finished Recording" && pkill -SIGRTMIN+10 waybar && exit 0 
 
 NID=$(notify-send --icon=replay-record -h string:wf-recorder:record -t 1500 "Recording in:" "<span color='#ebdbb2' font='26px'><b>3</b></span>" -p)
 
@@ -18,4 +18,5 @@ echo $NID
 sleep 1
 
 dateTime=$(date +%m-%d-%Y-%H:%M:%S)
+pkill -SIGRTMIN+10 waybar
 wf-recorder --bframes 40 -f "$HOME/Videos/$dateTime.mp4"
