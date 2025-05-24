@@ -111,7 +111,7 @@
 }
 
 .notification-row .notification-background .notification .notification-action:hover, .notification-row .notification-background .notification .notification-default-action:hover {
-  /* -gtk-icon-effect: none; */
+  -gtk-icon-effect: none;
   background: @noti-bg-hover;
 }
 
@@ -134,7 +134,7 @@
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .image {
   /* Notification Primary Image */
-  /* -gtk-icon-effect: none; */
+  -gtk-icon-effect: none;
   border-radius: 100px;
   /* Size in px */
   margin-right: 10px;
@@ -142,7 +142,7 @@
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .app-icon {
   /* Notification app icon (only visible when the primary image is set) */
-  /* -gtk-icon-effect: none; */
+  -gtk-icon-effect: none;
   /* -gtk-icon-shadow: 0 1px 4px black; */
   margin: 0px;
 }
@@ -199,7 +199,7 @@
   margin-top: 4px;
   background-color: white;
   border-radius: 12px;
-  /* -gtk-icon-effect: none; */
+  -gtk-icon-effect: none;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply {
@@ -338,11 +338,6 @@
 }
 
 .blank-window {
-  /* Window behind control center and on all other monitors */
-  background: transparent;
-}
-
-.blank-window:hover {
   /* Window behind control center and on all other monitors */
   background: transparent;
 }

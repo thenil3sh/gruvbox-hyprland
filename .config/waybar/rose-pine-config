@@ -1,8 +1,8 @@
 // -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 35, // Waybar height (to be removed for auto height)
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    "height": 36, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
@@ -11,10 +11,10 @@
         "custom/waybar_media"
     ],
     "modules-center": [
-        // "hyprland/window"
+        // "hyprland/window",
         "clock",
         // "custom/media",
-        "mpd",
+        // "mpd",
         "custom/notification",
         "custom/recording_status"
     ],
@@ -56,15 +56,37 @@
       },
     "hyprland/workspaces": {
         "disable-scroll": true,
+        // "active-only" : true,
         "all-outputs": true,
         "warp-on-scroll": false,
-        "format-urgent": "{num} : {icon} ",
-        "format-active": "{number} : {icon}",
-        "format": "{icon}",
+        "format-urgent": "{icon}",
+        "format": " {windows} {icon}",
+        "window-rewrite": {
+        "default" : "",
+        "class<xfce4-appfinder>" : "",
+        "initialClass<thorium-music.youtube.com.*>" : "",
+		"title<.*youtube.*>": "", 
+        "class<org.gnome.Nautilus>" : "",
+        "class<thorium-search.brave.com.*>" : "",
+		"class<firefox>": "", // Windows whose classes are "firefox"
+		"class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github". Note that "class" always comes first.
+        "class<Thorium-browser initialTitle<youtube.com_/>" : "",
+        "title<web.whatsapp.com>" : "󰖣",
+        "Title<.*Google Docs>" : "󰈙",
+        "class<Thorium-browser>" : "",
+        "class<org.pwmt.zathura>" : "",
+		"kitty": "",
+		"code": "",
+        "class<discord>" : "",
+		"title<.* - (.*) - VSCodium>": "codium $1",
+        "class<thunar>" : "",
+        "class<Spotify>" : "󰓇" 
+        },
         "format-icons": {
-            "urgent": "",
-            "active": "⭘",
-            "default": ""
+            "urgent": "  ",
+            "default": "",
+            "active" : "",
+            "empty" : ""
         }
     },
     "keyboard-state": {
@@ -236,11 +258,11 @@
     },
     "pulseaudio": {
         "spacing" : 20,
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% ",
+        "format": "{icon} {format_source}",
+        "format-bluetooth": "󰋋 {format_source}",
         "format-bluetooth-on-hover":"{volume} 󰋋 {format_source}",
-        "format-bluetooth-muted": "󰟎",
-        "format-muted": "󰖁",
+        "format-bluetooth-muted": "󰟎 {format_source}",
+        "format-muted": " {format_source}",
         "format-source": "󰍬",
         "format-source-muted": "󰍭",
         "format-icons": {

@@ -1787,7 +1787,7 @@ treeview.view:drop(active).before {
 }
 
 treeview.view.expander {
-  color: rgba(251, 241, 199, 0.7);
+  color: #a89884;
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   -gtk-icon-transform: rotate(-90deg);
 }
@@ -3527,7 +3527,7 @@ expander title > arrow {
   min-height: 16px;
   -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
   -gtk-icon-transform: rotate(-90deg);
-  color: rgba(251, 241, 199, 0.7);
+  color: #a89884;
 }
 
 expander title > arrow:dir(rtl) {
@@ -7466,7 +7466,7 @@ MsdOsdWindow.background.osd .progressbar {
 }
 
 .budgie-panel .icon-tasklist button.launcher:checked, .budgie-panel .icon-tasklist button.launcher:active {
-  color: #fbf1c7;
+  color: #a89884;
 }
 
 .top .budgie-panel.dock-mode {
@@ -8426,7 +8426,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_border #080707;
 @define-color wm_focused_bg #1d2021;
 @define-color wm_unfocused_bg #1d2021;
-@define-color wm_button_icon #fbf1c7;
+@define-color wm_button_icon #a89884;
 @define-color wm_button_focused_bg #2a2d2b;
 @define-color wm_button_unfocused_bg #2a2d2b;
 @define-color wm_button_hover_fg rgba(29, 32, 33, 0.87);

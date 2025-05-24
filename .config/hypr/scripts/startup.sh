@@ -8,7 +8,6 @@ scripts=$hypr_config/scripts
 "$scripts/waybar.sh" &
 
 # wallpaper set to cloud.png
-swww init && swww img $HOME/.config/hypr/wallpapers/home-sweet-home.jpg --transition-type center --transition-fps 60 --transition-speed 16
 
 # effects
 $scripts/rgb &

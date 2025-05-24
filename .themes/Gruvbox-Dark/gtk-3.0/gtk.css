@@ -8058,7 +8058,7 @@ wnck-pager:selected {
 XfdesktopIconView.view {
   border-radius: 12px;
   background-color: transparent;
-  color: #ebdbb2;
+  color: #a89884;
 }
 
 XfdesktopIconView.view:active {
@@ -8426,7 +8426,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_border #080707;
 @define-color wm_focused_bg #292828;
 @define-color wm_unfocused_bg #292828;
-@define-color wm_button_icon #ebdbb2;
+@define-color wm_button_icon #a89884;
 @define-color wm_button_focused_bg #2a2d2b;
 @define-color wm_button_unfocused_bg #2a2d2b;
 @define-color wm_button_hover_fg rgba(29, 32, 33, 0.87);
