@@ -122,5 +122,6 @@ export PATH=$HOME/.local/bin:$PATH
 alias sudo='sudo-rs'
 alias su='su-rs'
 alias yay='paru'
+alias sugui="sudo env "WAYLAND_DISPLAY=$WAYLAND_DISPLAY" "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR""
 export PATH=$PATH:/home/ton3s/.spicetify
 
