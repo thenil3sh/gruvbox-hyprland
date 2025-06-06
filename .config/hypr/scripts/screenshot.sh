@@ -6,6 +6,8 @@ if pgrep slurp > /dev/null; then
   exit 1;
 fi
 
+echo "Hey there?"
+
 # If regional capture is requested
 if [[ "$1" == "region" ]]; then
   icon="image-crop"
@@ -13,8 +15,10 @@ if [[ "$1" == "region" ]]; then
 else
   icon="view-fullscreen"
 fi \
-|| notify-send "Selection Cancelled" "Screenshot wasn't taken" --icon=image-crop && exit 0;
+|| (notify-send "Selection Cancelled" "Screenshot wasn't taken" --icon=image-crop && exit 0);
 # If selection cancleed ^
+
+echo "everything cool upto this point!!"
 
 # Finally capture, screenshot
 grim $region - | wl-copy && \
