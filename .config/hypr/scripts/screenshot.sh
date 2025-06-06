@@ -9,9 +9,9 @@ fi
 echo "Hey there?"
 
 # If regional capture is requested
-if [[ "$1" == "region" ]]; then
+if [[ $1 -eq 1 ]]; then
   icon="image-crop"
-  region="-g $(slurp)" 
+  region="$(slurp)" 
 else
   icon="view-fullscreen"
 fi \
@@ -21,6 +21,10 @@ fi \
 echo "everything cool upto this point!!"
 
 # Finally capture, screenshot
-grim $region - | wl-copy && \
+if [[ $1 -q 1 ]]; then
+  grim -g "$region" -
+else   
+  grim -
+fi | wl-copy && \
 wl-paste > ~/Pictures/Screenshots/Screenshot-"$(date +%F_%T)".png && \
-notify-send 'Screenshot takens' 'Image copied to clipboard' --icon=$icon -t 5000
+notify-send 'Screenshot taken' 'Image copied to clipboard' --icon=$icon -t 5000
