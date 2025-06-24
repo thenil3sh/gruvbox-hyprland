@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    // "position": "top", // Waybar position (top|bottom|left|right)
     "height": 35, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 0, // Gaps between modules (4px)
@@ -89,6 +89,14 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
+    "custom/waybar-media": {
+    "return-type": "json",
+    "exec": "waybar-media.py status",
+    "on-click": "waybar-media.py playpause",
+    "on-scroll-up": "waybar-media.py previous",
+    "on-scroll-down": "waybar-media.py next",
+    "escape": true
+},
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",
@@ -240,7 +248,7 @@
         "format-bluetooth": "{volume}% ",
         "format-bluetooth-on-hover":"{volume} 󰋋 {format_source}",
         "format-bluetooth-muted": "󰟎",
-        "format-muted": "󰖁",
+        "format-muted": "",
         "format-source": "󰍬",
         "format-source-muted": "󰍭",
         "format-icons": {
@@ -251,9 +259,7 @@
             "portable": "",
             "car": "",
             "default": [
-                "󰕿",
-                "󰖀",
-                "󰕾"
+                ""
             ]
         },
         "on-click": "pavucontrol"
@@ -302,19 +308,20 @@
     // "escape": true
     // },
     
-    // "custom/waybar_media" : {
-    //     "exec" : "waybar_media_status",
-    //     "return-type" : "json",
-    //     "on-click" : "playerctl play-pause",
-    //     "format" : "{icon} {text} {percentage}",
-    //     "format-icons" : [
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "",
-    //         "󰕼",
-    //         ""
-    //     ]
-    // }
+    "custom/waybar_media" : {
+        "exec" : "waybar_media_status",
+        "hide-empty-text" : true,
+        "return-type" : "json",
+        "on-click" : "playerctl play-pause",
+        "format" : "{icon} {text}",
+        "format-icons" : [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "󰕼",
+            ""
+        ]
+    }
 }

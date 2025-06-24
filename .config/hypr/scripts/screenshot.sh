@@ -21,7 +21,7 @@ fi \
 echo "everything cool upto this point!!"
 
 # Finally capture, screenshot
-if [[ $1 -q 1 ]]; then
+if [[ $1 -eq 1 ]]; then
   grim -g "$region" -
 else   
   grim -

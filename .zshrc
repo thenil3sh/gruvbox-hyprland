@@ -125,3 +125,9 @@ alias yay='paru'
 alias sugui="sudo env "WAYLAND_DISPLAY=$WAYLAND_DISPLAY" "XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR""
 export PATH=$PATH:/home/ton3s/.spicetify
 
+
+## [Completion]
+## Completion scripts setup. Remove the following line to uninstall
+[[ -f /home/ton3s/.dart-cli-completion/zsh-config.zsh ]] && . /home/ton3s/.dart-cli-completion/zsh-config.zsh || true
+## [/Completion]
+
