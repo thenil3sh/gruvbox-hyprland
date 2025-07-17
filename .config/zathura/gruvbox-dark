@@ -24,8 +24,8 @@ set inputbar-fg                 "#ebdbb2" # fg
 set statusbar-bg                "#504945" # bg2
 set statusbar-fg                "#ebdbb2" # fg
 
-set highlight-color             "#a89984"
-set highlight-active-color      "#a89984" 
+set highlight-color             "#aaa89984"
+set highlight-active-color      "#a89984"
 # set highlight-transparency      0.3
 
 set default-bg                  "#282828" # bg
