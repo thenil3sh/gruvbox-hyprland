@@ -361,5 +361,6 @@ window#waybar {
     margin-top: 6px;
     margin-left: 10px;
     color: #a89884;
+    padding-left: 10px;
     padding-right: 10px;
 }

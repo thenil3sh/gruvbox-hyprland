@@ -6,10 +6,7 @@
   // "width": 1280, // Waybar width
   "spacing": 0, // Gaps between modules (4px)
   // Choose the order of the modules
-  "modules-left": [
-    "hyprland/workspaces"
-    // "custom/waybar_media"
-  ],
+  "modules-left": ["hyprland/workspaces", "custom/waybar_media"],
   "modules-center": [
     // "hyprland/window"
     "clock",
@@ -271,11 +268,15 @@
   // },
 
   "custom/waybar_media": {
-    "exec": "waybar_media_status",
-    "hide-empty-text": true,
+    "exec": "/home/ton3s/.config/waybar/media_status.sh",
     "return-type": "json",
+    "hide-empty-text": true,
     "on-click": "playerctl play-pause",
     "format": "{icon} {text}",
-    "format-icons": ["", "", "", "", "", "󰕼", ""]
+    "format-icons": {
+      "spotify": "",
+      "brave": "",
+      "firefox": ""
+    }
   }
 }
