@@ -6,12 +6,10 @@ if pgrep slurp > /dev/null; then
   exit 1;
 fi
 
-echo "Hey there?"
-
 # If regional capture is requested
 if [[ $1 -eq 1 ]]; then
   icon="image-crop"
-  region="$(slurp)" 
+  region="$(slurp)"
 else
   icon="view-fullscreen"
 fi \
@@ -23,7 +21,7 @@ echo "everything cool upto this point!!"
 # Finally capture, screenshot
 if [[ $1 -eq 1 ]]; then
   grim -g "$region" -
-else   
+else
   grim -
 fi | wl-copy && \
 wl-paste > ~/Pictures/Screenshots/Screenshot-"$(date +%F_%T)".png && \

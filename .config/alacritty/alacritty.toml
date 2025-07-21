@@ -1,0 +1,11 @@
+[general]
+import = ["/home/ton3s/dotfiles/.config/alacritty/themes/gruvbox_material.toml"]
+
+[window]
+padding = { x = 20, y = 20 }
+
+[font]
+normal.family = "JetBrainsMono Nerd Font"
+italic.family = "JetBrainsMono Nerd Font"
+bold.family = "JetBrainsMono Nerd Font"
+size = 11
