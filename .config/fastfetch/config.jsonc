@@ -45,7 +45,7 @@
     {
       "type": "os",
       "key": "{icon} Distro",
-      "format": "{name}",
+      "format": "Vanilla {name}",
       "keyColor": "light_cyan"
     },
 

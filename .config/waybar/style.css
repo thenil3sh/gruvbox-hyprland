@@ -364,3 +364,50 @@ window#waybar {
     padding-left: 10px;
     padding-right: 10px;
 }
+
+#custom-weathr {
+    border-radius : 10px;
+    font-family: "Twemoji Color", "JetBrainsMono Nerd Font";
+    border: 2px solid #a89884;
+    font-size: 13px;
+    background: #292828;
+    margin-right: 10px;
+    margin-top: 6px;
+    color: #a89884;
+    padding-left: 10px;
+    font-weight : 700;
+    padding-right: 10px;
+}
+
+#custom-status_watcher.active {
+    border-radius : 10px;
+    font-family: "Twemoji Color", "JetBrainsMono Nerd Font";
+    border: 2px solid #a89884;
+    font-size: 13px;
+    background: #292828;
+    margin-top: 6px;
+    margin-left: 10px;
+    color: #665c54;
+    padding-left: 10px;
+    font-weight : 700;
+    padding-right: 10px;
+    animation-name: live-pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes live-pulse {
+    to {
+        color : #b8bb26
+    }
+}
+
+tooltip {
+    min-height : 50px;
+    margin : 20px;
+    border : 1px dashed #3c3836;
+    padding : 20px;
+    border-radius : 20px;
+}

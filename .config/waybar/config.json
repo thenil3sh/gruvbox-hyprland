@@ -11,13 +11,16 @@
     // "hyprland/window"
     "clock",
     // "custom/media",
+    "custom/weathr",
+    "cava",
     "mpd",
     "custom/notification",
     "custom/recording_status"
   ],
   "modules-right": [
+    "custom/status_watcher",
     // "idle_inhibitor",
-    "network",
+    // "network",
     "pulseaudio",
     // "power-profiles-daemon",
     // "cpu",
@@ -64,6 +67,30 @@
       "default": ""
     }
   },
+  "cava": {
+        // "cava_config": "$XDG_CONFIG_HOME/cava/cava.conf",
+        "framerate": 30,
+        "autosens": 1,
+        "sensitivity": 1,
+        "bars": 14,
+        "lower_cutoff_freq": 50,
+        "higher_cutoff_freq": 200,
+        "hide_on_silence": false,
+        // "format_silent": "quiet",
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": true,
+        "waves": true,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
   "keyboard-state": {
     "numlock": true,
     "capslock": true,
@@ -166,7 +193,7 @@
     "format": "{capacity}% {icon}",
     "format-full": "{capacity}% {icon}",
     "format-charging": "",
-    "format-plugged": "󰋑",
+    "format-not-charging": "󰋑",
     "format-alt": "{time} {icon}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
@@ -277,6 +304,39 @@
       "spotify": "",
       "brave": "",
       "firefox": ""
+    }
+  },
+  "custom/weathr" : {
+    "exec" : "/home/ton3s/.cargo/bin/weathr_waybr",
+    "return-type": "json",
+    "format" : "{icon} {text}",
+    "format-icons" : {
+      "1000" : "☀️",
+      "1003" : "🌤️",
+      "1006" : "🌥️",
+      "1009" : "☁️",
+      "1030" : "☴",
+      "1063" : "🌦️",
+      "1240" : "",
+      "1180" : "",
+      "1066" : "🌨️",
+      "1069" : "🌨️",
+      "1072" : "❄️",
+      "1087" : "⚡",
+      "1114" : "❄️",
+      "1117" : "❄️",
+      "1135" : "🌫️",
+      "1147" : "🥶",
+      "" : ""
+    }
+  },
+  "custom/status_watcher" : {
+    "exec" : "status_watcher",
+    "return-type" : "json",
+    "format" : "{icon} {text}",
+    "format-icons" : {
+      "default" : "",
+      "active" : "󰑊"
     }
   }
 }
